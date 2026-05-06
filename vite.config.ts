@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import tailwindcss from "@theme/vite"; // Use @tailwindcss/vite if using v4
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
@@ -11,7 +11,7 @@ export default defineConfig({
       "@shared": path.resolve(__dirname, "./shared"),
     },
   },
-  root: ".",
+  root: ".", // This assumes index.html is in your root folder
   build: {
     outDir: "dist/public",
     emptyOutDir: true,
