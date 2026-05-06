@@ -11,9 +11,9 @@ export default defineConfig({
       "@shared": path.resolve(__dirname, "./shared"),
     },
   },
-  root: ".", // This assumes index.html is in your root folder
+  root: "client/src", // Points Vite to the folder containing your index.html
   build: {
-    outDir: "dist/public",
+    outDir: "../../dist/public", // Moves the finished build up into the main dist folder
     emptyOutDir: true,
   },
 });
