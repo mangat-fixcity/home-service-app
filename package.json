@@ -50,4 +50,33 @@
     "drizzle-orm": "^0.39.1",
     "drizzle-zod": "^0.7.0",
     "embla-carousel-react": "^8.6.0",
-    "express": "^4
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.545.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7",
+    "wouter": "^3.3.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/express": "4.17.21",
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "drizzle-kit": "^0.31.4",
+    "esbuild": "^0.25.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14",
+    "tsx": "^4.20.5",
+    "typescript": "5.6.3",
+    "vite": "^7.1.9"
+  }
+}
