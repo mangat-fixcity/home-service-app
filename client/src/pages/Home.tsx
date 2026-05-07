@@ -235,33 +235,38 @@ export default function Home() {
                 <p className="text-muted-foreground text-lg">Find and book trusted home services instantly</p>
               </div>
               
-              {/* Desktop QR Code - Enhanced Welcome position */}
+              {/* Desktop QR Code */}
               <div className="hidden lg:block group relative">
-                <div className="absolute -inset-1.5 bg-gradient-to-tr from-cyan-400/30 to-blue-400/30 rounded-2xl blur opacity-40 group-hover:opacity-100 transition duration-700"></div>
-                <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
-                  <div className="flex items-center gap-4">
-                    <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner">
-                     <a href="/fixcity-qr.png" target="_blank">
-                      <img 
-                        src="/fixcity-qr.png"
-                        alt="Fixcity QR Code"
-                        width={68}
-                        height={68}
-                        className="rounded-sm cursor-pointer"
-                      />
-                    </a>  
-                    </div>
-                    <div className="text-left space-y-1 pr-1">
-                      <div className="flex items-center gap-1.5">
-                        <Badge variant="outline" className="bg-cyan-500/10 text-[9px] h-4 border-cyan-200 text-cyan-700 font-bold px-1.5 uppercase tracking-tighter">Mobile Sync</Badge>
-                      </div>
-                      <p className="font-black text-cyan-900 text-xs tracking-tight">Scan for Mobile App</p>
-                      <p className="text-[10px] font-medium text-cyan-700/70 leading-tight">Continue booking<br/>on the go</p>
-                    </div>
-                  </div>
-                </Card>
-              </div>
+               <div className="absolute -inset-1.5 bg-gradient-to-tr from-cyan-400/30 to-blue-400/30 rounded-2xl blur opacity-40 group-hover:opacity-100 transition duration-700 pointer-events-none">
+               <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
+                <div className="flex items-center gap-4">
+                 <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner relative z-10">
+                  <a
+                   href="/fixcity-qr.png"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="block"
+                 >
+                   <img
+                     src="/fixcity-qr.png"
+                     alt="Fixcity QR Code"
+                     width={68}
+                    height={68}
+                    className="rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                 />
+              </a>
             </div>
+            <div className="text-left space-y-1 pr-1">
+              <div className="flex items-center gap-1.5">
+                <Badge variant="outline" className="bg-cyan-500/10 text-[9px] h-4 border-cyan-200 text-cyan-700 font-bold px-1.5 uppercase tracking-tighter">Mobile Sync</Badge>
+             </div>
+             <p className="font-black text-cyan-900 text-xs tracking-tight">Click QR to enlarge</p>
+             <p className="text-[10px] font-medium text-cyan-700/70 leading-tight">Scan for instant<br/>mobile access</p>
+          </div>
+        </div>
+      </Card>
+     </div>
+   </div>
 
             {/* Location & Search Bar */}
             <div className="flex flex-col sm:flex-row gap-3 max-w-4xl">
@@ -567,35 +572,40 @@ export default function Home() {
           <div className="flex items-center gap-4">
             {/* Desktop QR Code - Enhanced Top Left position */}
             <div className="hidden md:block group cursor-help relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x pointer-events-none"></div>
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
-                   <a href="/fixcity-qr.png" target="_blank">  
-                    <img 
-                      src="/fixcity-qr.png"
-                      alt="Fixcity QR Code"
-                      width={52}
-                      height={52}
-                      className="transition-transform duration-500 group-hover:rotate-1 cursor-pointer"
-                    />
-                 </a>   
-                    <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg" />
+                    <a
+                      href="/fixcity-qr.png"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block relative z-10"
+                    >
+                      <img
+                        src="/fixcity-qr.png"
+                        alt="Fixcity QR Code"
+                        width={52}
+                        height={52}
+                        className="transition-transform duration-500 group-hover:rotate-1 cursor-pointer"
+                      />
+                    </a>
+                    <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg pointer-events-none" />
                   </div>
                   <div className="flex flex-col justify-center">
                     <div className="flex items-center gap-1 mb-0.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                       <p className="text-[11px] font-black uppercase tracking-wider text-primary leading-none">Live Booking</p>
-                    </div>
-                    <p className="text-[10px] font-bold text-muted-foreground leading-tight">Scan for Instant<br/>Mobile Access</p>
-                  </div>
-                </div>
-              </Card>
-              
-              {/* Floating tooltip on hover */}
-              <div className="absolute -bottom-10 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                <div className="bg-primary text-[10px] text-white px-2 py-1 rounded shadow-lg text-center font-bold whitespace-nowrap">
-                  Open on your phone! 📱
+                 </div>
+                 <p className="text-[10px] font-bold text-muted-foreground leading-tight">Scan for Instant<br/>Mobile Access</p>
+               </div>
+            </div>
+         </Card>
+
+         {/* Floating tooltip on hover */}
+         <div className="absolute -bottom-10 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+           <div className="bg-primary text-[10px] text-white px-2 py-1 rounded shadow-lg text-center font-bold whitespace-nowrap">
+             Open on your phone! 📱
                 </div>
               </div>
             </div>
