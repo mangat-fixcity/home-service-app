@@ -241,13 +241,15 @@ export default function Home() {
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner">
+                     <a href="/fixcity-qr.png" target="_blank">
                       <img 
                         src="/fixcity-qr.png"
                         alt="Fixcity QR Code"
-                        width={90}
-                        height={90}
-                        className="rounded-sm bg-white p-1"
+                        width={68}
+                        height={68}
+                        className="rounded-sm cursor-pointer"
                       />
+                    </a>  
                     </div>
                     <div className="text-left space-y-1 pr-1">
                       <div className="flex items-center gap-1.5">
@@ -569,13 +571,15 @@ export default function Home() {
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
+                   <a href="/fixcity-qr.png" target="_blank">  
                     <img 
                       src="/fixcity-qr.png"
                       alt="Fixcity QR Code"
                       width={52}
                       height={52}
-                      className="transition-transform duration-500 group-hover:rotate-1"
+                      className="transition-transform duration-500 group-hover:rotate-1 cursor-pointer"
                     />
+                 </a>   
                     <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg" />
                   </div>
                   <div className="flex flex-col justify-center">
