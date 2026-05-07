@@ -1,22 +1,20 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": path.resolve(import.meta.dirname, "client", "src"),
-      "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@": path.resolve(__dirname, "client", "src"),
+      "@shared": path.resolve(__dirname, "shared"),
+      "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),  // Points to /client folder, not /client/src
+  root: "client/src", // Correctly points to where index.html lives
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist", "public"),
+    outDir: "../../dist/public", // Goes up to the main dist folder
     emptyOutDir: true,
-  },
-  server: {
-    host: "0.0.0.0",
   },
 });
