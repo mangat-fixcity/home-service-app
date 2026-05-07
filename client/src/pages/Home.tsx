@@ -242,11 +242,13 @@ export default function Home() {
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
-                      <QRCodeSVG 
-                        value="https://www.fixcity.replit.app" 
-                        size={68}
-                        level="H"
-                        className="rounded-sm"
+                      <img 
+                        src="/fixcity-qr.png"
+                        alt="Fixcity QR Code"
+                        width={68}
+                        height={68}
+                        className="rounded-sm cursor-pointer hover:opacity-80 transition-opacity"
+                        onClick={() => window.open('/fixcity-qr.png', '_blank')}
                       />
                     </div>
                     <div className="text-left space-y-1 pr-1">
@@ -569,12 +571,13 @@ export default function Home() {
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
-                    <QRCodeSVG 
-                      value="https://www.fixcity.replit.app" 
-                      size={52}
-                      level="H"
-                      includeMargin={false}
-                      className="transition-transform duration-500 group-hover:rotate-1"
+                    <img 
+                      src="/fixcity-qr.png"
+                      alt="Fixcity QR Code"
+                      width={52}
+                      height={52}
+                      className="transition-transform duration-500 group-hover:rotate-1 cursor-pointer hover:opacity-80"
+                      onClick={() => window.open('/fixcity-qr.png', '_blank')}
                     />
                     <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg" />
                   </div>
