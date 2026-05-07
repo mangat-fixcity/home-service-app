@@ -243,9 +243,10 @@ export default function Home() {
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
                       <QRCodeSVG 
-                        value="https://www.fixcity.replit.app" 
+                        value="https://home-service-app.onrender.com" 
                         size={68}
                         level="H"
+                        fgColor="#1e8e7a"
                         className="rounded-sm"
                       />
                     </div>
@@ -570,9 +571,10 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
                     <QRCodeSVG 
-                      value="https://www.fixcity.replit.app" 
+                      value="https://home-service-app.onrender.com" 
                       size={52}
                       level="H"
+                      fgColor="#1e8e7a"
                       includeMargin={false}
                       className="transition-transform duration-500 group-hover:rotate-1"
                     />
