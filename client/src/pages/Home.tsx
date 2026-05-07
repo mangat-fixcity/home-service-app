@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
-import { QRCodeSVG } from "qrcode.react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ServiceCategoryCard from "@/components/modules/ServiceCategoryCard";
@@ -242,11 +241,11 @@ export default function Home() {
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
-                      <QRCodeSVG 
-                        value="https://home-service-app.onrender.com" 
-                        size={68}
-                        level="H"
-                        fgColor="#1e8e7a"
+                      <img 
+                        src="/fixcity-qr.png"
+                        alt="Fixcity QR Code"
+                        width={68}
+                        height={68}
                         className="rounded-sm"
                       />
                     </div>
@@ -570,12 +569,11 @@ export default function Home() {
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
-                    <QRCodeSVG 
-                      value="https://home-service-app.onrender.com" 
-                      size={52}
-                      level="H"
-                      fgColor="#1e8e7a"
-                      includeMargin={false}
+                    <img 
+                      src="/fixcity-qr.png"
+                      alt="Fixcity QR Code"
+                      width={52}
+                      height={52}
                       className="transition-transform duration-500 group-hover:rotate-1"
                     />
                     <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg" />
