@@ -12,9 +12,9 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: "client/src", // Correctly points to where index.html lives
+  root: "client", // This matches your GitHub structure exactly
   build: {
-    outDir: "../../dist/public", // Goes up to the main dist folder
+    outDir: "../dist/public", 
     emptyOutDir: true,
   },
 });
