@@ -240,13 +240,13 @@ export default function Home() {
                 <div className="absolute -inset-1.5 bg-gradient-to-tr from-cyan-400/30 to-blue-400/30 rounded-2xl blur opacity-40 group-hover:opacity-100 transition duration-700"></div>
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
-                    <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
+                    <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner">
                       <img 
                         src="/fixcity-qr.png"
                         alt="Fixcity QR Code"
-                        width={68}
-                        height={68}
-                        className="rounded-sm"
+                        width={90}
+                        height={90}
+                        className="rounded-sm bg-white p-1"
                       />
                     </div>
                     <div className="text-left space-y-1 pr-1">
