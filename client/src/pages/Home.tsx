@@ -586,10 +586,10 @@ export default function Home() {
                       <p className="text-[11px] font-black uppercase tracking-wider text-primary leading-none">Live Booking</p>
                     </div>
                     <p className="text-[10px] font-bold text-muted-foreground leading-tight">Scan for Instant<br/>Mobile Access</p>
-                  </div>
+                  
                 </div>
               </Card>
-              
+             </div> 
               {/* Floating tooltip on hover */}
               <div className="absolute -bottom-10 left-0 w-full opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
                 <div className="bg-primary text-[10px] text-white px-2 py-1 rounded shadow-lg text-center font-bold whitespace-nowrap">
@@ -600,7 +600,7 @@ export default function Home() {
             <div>
               <p className="font-medium text-foreground">✨ Welcome to Fixcity</p>
               <p className="text-sm text-muted-foreground">India's fastest-growing home services platform. Are you a professional? Join now and grow your business!</p>
-            </div>
+            </div>p
           </div>
           <div className="flex gap-2">
             <Button variant="outline" size="sm" onClick={() => setLocation("/professional-login")} data-testid="button-pro-login">Professional Login</Button>
@@ -1202,5 +1202,5 @@ export default function Home() {
       {/* Login Modal */}
       <LoginPopupModal isOpen={showLoginModal} onClose={() => setShowLoginModal(false)} />
     </div>
-  );
+  );   
 }
