@@ -238,7 +238,7 @@ export default function Home() {
               
               {/* Desktop QR Code - Enhanced Welcome position */}
               <div className="hidden lg:block group relative">
-                <div className="absolute -inset-1.5 bg-gradient-to-tr from-cyan-400/30 to-blue-400/30 rounded-2xl blur opacity-40 group-hover:opacity-100 transition duration-700"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x pointer-events-none"></div>
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
@@ -565,7 +565,7 @@ export default function Home() {
           <div className="flex items-center gap-4">
             {/* Desktop QR Code - Enhanced Top Left position */}
             <div className="hidden md:block group cursor-help relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x pointer-events-none"></div>
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
@@ -576,7 +576,7 @@ export default function Home() {
                       includeMargin={false}
                       className="transition-transform duration-500 group-hover:rotate-1"
                     />
-                    <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg" />
+                    <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg pointer-events-none" />
                   </div>
                   <div className="flex flex-col justify-center">
                     <div className="flex items-center gap-1 mb-0.5">
