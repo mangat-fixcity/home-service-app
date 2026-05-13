@@ -237,19 +237,19 @@ export default function Home() {
               </div>
               
               {/* Desktop QR Code - Enhanced Welcome position */}
-              <div className="hidden lg:block group relative">
+              <div className="block group relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x pointer-events-none"></div>
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
-                      <a href="https://home-service-app.onrender.com" target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                      <div className="bg-white p-2 rounded-lg">
                        <QRCodeSVG 
                         value="https://home-service-app.onrender.com" 
-                        size={68}
+                        size={96}
                         level="H"
-                        className="rounded-sm"
+                        className="rounded-sm transition-transform duration-300 group-hover:scale-110"
                       />
-                     </a>   
+                     </div>   
                     </div>
                     <div className="text-left space-y-1 pr-1">
                       <div className="flex items-center gap-1.5">
