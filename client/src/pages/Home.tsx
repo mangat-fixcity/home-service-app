@@ -577,7 +577,7 @@ export default function Home() {
                       size={52}
                       level="H"
                       includeMargin={false}
-                      className="transition-transform duration-500 group-hover:rotate-1"
+                      className="transition-transform duration-300 group-hover:rotate-110"
                     />
                    </a>   
                     <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg pointer-events-none" />
