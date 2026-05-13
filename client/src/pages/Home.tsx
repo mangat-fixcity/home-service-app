@@ -242,9 +242,9 @@ export default function Home() {
                 <Card className="relative bg-gradient-to-br from-white to-cyan-50/50 border-2 border-cyan-200/50 p-2.5 shadow-2xl hover:shadow-cyan-200/50 transition-all duration-500 rounded-2xl hover:-translate-y-1">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white rounded-xl border-2 border-cyan-100 shadow-inner group-hover:scale-105 transition-transform duration-500">
-                      <a href="https://www.fixcity.replit.app" target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                      <a href="https://home-service-app.onrender.com" target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
                        <QRCodeSVG 
-                        value="https://www.fixcity.replit.app" 
+                        value="https://home-service-app.onrender.com" 
                         size={68}
                         level="H"
                         className="rounded-sm"
@@ -571,9 +571,9 @@ export default function Home() {
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
                   <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
-                    <a href="https://www.fixcity.replit.app" target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                    <a href="https://home-service-app.onrender.com" target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
                       <QRCodeSVG
-                      value="https://www.fixcity.replit.app" 
+                      value="https://home-service-app.onrender.com" 
                       size={52}
                       level="H"
                       includeMargin={false}
