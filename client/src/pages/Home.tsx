@@ -570,16 +570,16 @@ export default function Home() {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-gradient-x pointer-events-none"></div>
               <Card className="relative bg-white/90 backdrop-blur-sm p-2 border-2 border-primary/20 shadow-xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 rounded-xl">
                 <div className="flex items-center gap-3">
-                  <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner group-hover:border-primary/30 transition-colors">
-                    <a href="https://home-service-app.onrender.com" target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                  <div className="relative p-1.5 bg-white rounded-lg border border-primary/10 shadow-inner transition-colors">
+                    <div>
                       <QRCodeSVG
                       value="https://home-service-app.onrender.com" 
-                      size={52}
+                      size={96}
                       level="H"
                       includeMargin={false}
-                      className="transition-transform duration-300 group-hover:rotate-110"
+                      className="transition-transform duration-300 hover:scale-110"
                     />
-                   </a>   
+                   </div>   
                     <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg pointer-events-none" />
                   </div>
                   <div className="flex flex-col justify-center">
